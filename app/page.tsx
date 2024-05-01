@@ -2,6 +2,8 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 export default function Home() {
+  const n = 6
+
   return (
     <main className='relative mt-[105px] w-full mx-auto max-w-[1920px]'>
       <div className='bg-[#2fff00]  text-black flex justify-center text-2xl py-2 font-light'>
@@ -27,6 +29,23 @@ export default function Home() {
           </span>
         </div>
         <div className='bg-rightwing absolute right-0 top-0 h-[1200px] w-[500px]  bg-cover  bg-right -z-10 '></div>
+      </div>
+      <div className='bg-white z-20 text-black flex justify-center text-2xl py-5 font-bold'>
+        {[...Array(n)].map((e, i) => (
+          <div className=' text-nowrap mx-7'>
+            SCROLL TO EXPLORE
+          </div>
+        ))}
+      </div>
+      <div
+        className='bg-[#fe0037] z-0 text-black flex justify-center text-2xl py-5 font-bold '
+        style={{ transform: 'rotate(-2deg)' }}
+      >
+        {[...Array(n)].map((e, i) => (
+          <div className=' text-nowrap mx-7'>
+            UNLEASH YOUR POTENTIAL
+          </div>
+        ))}
       </div>
     </main>
   )

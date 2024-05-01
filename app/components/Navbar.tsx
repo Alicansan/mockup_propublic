@@ -5,7 +5,7 @@ import Button from './Button'
 
 const Navbar = () => {
   return (
-    <nav className='fixed z-30  backdrop-blur-[3px] w-full mx-auto left-0 right-0 top-0 max-w-[1920px] border-red-500 border-2 '>
+    <nav className='fixed z-30  backdrop-blur-[3px] w-full mx-auto left-0 right-0 top-0 max-w-[1920px] '>
       <div className='flex items-center float-start p-0 m-0'>
         <Link href='/' className='flex'>
           <Image
