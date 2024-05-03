@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
+import Carousel from './components/Carousel'
 
 export default function Home() {
   const n = 6
@@ -47,6 +48,7 @@ export default function Home() {
           </div>
         ))}
       </div>
+      <Carousel />
     </main>
   )
 }
