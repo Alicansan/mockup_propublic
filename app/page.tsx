@@ -1,12 +1,13 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Carousel from './components/Carousel'
+import Carousel from './components/Caroselmain'
+import Carouselmain from './components/Caroselmain'
 
 export default function Home() {
   const n = 6
 
   return (
-    <main className='relative mt-[110px] w-full mx-auto max-w-[1920px]'>
+    <main className=' mt-[110px] w-full mx-auto max-w-[1920px]'>
       <div className='bg-[#2fff00] font-Inter text-black flex justify-center text-xl py-2 font-light'>
         A NEW COURSE HAS BEEN UPDATED! "HOW TO
         MAINTAIN TEAMMATE COMMUNICATING SKILLS"{' '}
@@ -80,7 +81,7 @@ export default function Home() {
           </div>
         ))}
       </div>
-      <Carousel />
+      <Carouselmain />
     </main>
   )
 }

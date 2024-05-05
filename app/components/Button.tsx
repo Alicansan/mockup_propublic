@@ -58,6 +58,24 @@ const Button = ({
                 className='h-2 w-2 rotate-90'
               />
             </div>
+            <div className='absolute right-2 bottom-2'>
+              <Image
+                src='/button/button-br.svg'
+                alt='button'
+                width={32}
+                height={32}
+                className='h-2 w-2 -rotate-90'
+              />
+            </div>
+            <div className='absolute right-2 top-2'>
+              <Image
+                src='/button/button-br.svg'
+                alt='button'
+                width={32}
+                height={32}
+                className='h-2 w-2 rotate-180'
+              />
+            </div>
           </>
         )}
         {title}
