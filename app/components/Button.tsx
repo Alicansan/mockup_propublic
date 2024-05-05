@@ -1,3 +1,4 @@
+import { cn } from '@/lib/utils'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
@@ -8,7 +9,7 @@ type ButtonProp = {
   link: string
   icon?: string
   variant: 'btn_green' | 'btn_white'
-  additional?: string
+  className?: string
 }
 const Button = ({
   type,
@@ -16,13 +17,17 @@ const Button = ({
   link,
   icon,
   variant,
-  additional,
+  className,
 }: ButtonProp) => {
   return (
     <Link href={link}>
       <button
         type={type}
-        className={` ${variant} ${additional}`}
+        className={cn(
+          'relative',
+          variant,
+          className
+        )}
       >
         {icon && (
           <Image
@@ -31,6 +36,29 @@ const Button = ({
             width={32}
             height={32}
           />
+        )}
+        {variant === 'btn_green' && (
+          <>
+            <div className='absolute left-2 bottom-2'>
+              <Image
+                src='/button/button-br.svg'
+                alt='button'
+                width={32}
+                height={32}
+                className='h-2 w-2'
+              />
+            </div>
+
+            <div className='absolute left-2 top-2'>
+              <Image
+                src='/button/button-br.svg'
+                alt='button'
+                width={32}
+                height={32}
+                className='h-2 w-2 rotate-90'
+              />
+            </div>
+          </>
         )}
         {title}
       </button>

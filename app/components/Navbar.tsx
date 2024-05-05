@@ -41,7 +41,7 @@ const Navbar = () => {
             link='/'
             variant='btn_white'
             icon='/user.png'
-            additional={'p-4'}
+            className='p-4'
           />
         </div>
       </div>

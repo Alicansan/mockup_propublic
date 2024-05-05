@@ -1,9 +1,16 @@
 import type { Metadata } from 'next'
-import { Teko } from 'next/font/google'
+import { Teko, Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from './components/Navbar'
 
-const teko = Teko({ subsets: ['latin'] })
+const teko = Teko({
+  subsets: ['latin'],
+  variable: '--font-teko',
+})
+const inter = Inter({
+  subsets: ['latin'],
+  variable: '--font-inter',
+})
 
 export const metadata: Metadata = {
   title: 'Propublic',
@@ -17,7 +24,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='en'>
-      <body className={teko.className}>
+      <body
+        className={`${teko.variable} ${inter.variable}`}
+      >
         <Navbar />
         {children}
       </body>
