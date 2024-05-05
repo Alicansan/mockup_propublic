@@ -1,13 +1,12 @@
+import Carouselmain from '@/components/Caroselmain'
 import Image from 'next/image'
 import Link from 'next/link'
-import Carousel from './components/Caroselmain'
-import Carouselmain from './components/Caroselmain'
 
 export default function Home() {
   const n = 6
 
   return (
-    <main className=' mt-[110px] w-full mx-auto max-w-[1920px]'>
+    <main className=' mt-[110px] w-full mx-auto max-w-[1920px] h-full'>
       <div className='bg-[#2fff00] font-Inter text-black flex justify-center text-xl py-2 font-light'>
         A NEW COURSE HAS BEEN UPDATED! "HOW TO
         MAINTAIN TEAMMATE COMMUNICATING SKILLS"{' '}
@@ -17,38 +16,26 @@ export default function Home() {
           </span>
         </Link>
       </div>
-      <div className=' flex justify-evenly mx-[12rem]  mt-11'>
-        <div
-          className='absolute left-0 top-0 h-[1200px] w-[500px]  bg-cover  bg-left -z-10'
-          style={{
-            backgroundImage:
-              "url('/leftwing.png')",
-          }}
-        ></div>
-        <div>
-          <div className='text-[170px] font-semibold z-20 text-center  relative flex flex-col'>
-            <h1 className='sr-only'>
-              Unleash your gaming potential. we
-              stand as the only platform that
-              provides professional coaching
-              services tailored specifically for
-              your favorite mobile games.
-            </h1>
-            <span className=''>
-              UNLEASH YOUR{' '}
+
+      {/* Hero Section */}
+      <div className='h-screen relative flex flex-col justify-evenly mt-11'>
+        <div className='text-[170px] font-semibold z-20 text-center  relative flex flex-col'>
+          <h1 className='sr-only'>
+            Unleash your gaming potential.
+          </h1>
+          <span className=''>UNLEASH YOUR </span>
+          <span className='text-[#fe0037]'>
+            GAMING{' '}
+            <span className='relative'>
+              POTENTIAL{' '}
+              <img
+                src='/scribble.svg'
+                className='absolute bottom-9 right-0'
+              />
             </span>
-            <span className='text-[#fe0037]'>
-              GAMING{' '}
-              <span className='relative'>
-                POTENTIAL{' '}
-                <img
-                  src='/scribble.svg'
-                  className='absolute bottom-9sharex right-0 '
-                />
-              </span>
-            </span>
-          </div>
-          <p className='text-4xl uppercase flex flex-nowrap my-[5rem] mx-[350px]'>
+          </span>
+
+          <p className='text-4xl max-w-3xl mx-auto uppercase my-24 text-center'>
             we stand as the only platform that
             provides professional coaching
             services tailored specifically for
@@ -56,31 +43,41 @@ export default function Home() {
           </p>
         </div>
 
-        <div
-          className='absolute right-0 top-0 h-[1200px] w-[500px]  bg-cover  bg-right -z-10 '
-          style={{
-            backgroundImage:
-              "url('/rightwing.png')",
-          }}
-        ></div>
-      </div>
-      <div className='bg-white relative z-20 text-black flex justify-center text-2xl py-5 font-bold'>
-        {[...Array(n)].map((e, i) => (
-          <div className=' text-nowrap mx-7'>
-            SCROLL TO EXPLORE
+        <img
+          src='/leftwing.png'
+          width='500px'
+          height='1200px'
+          className='absolute left-0 top-0  -z-10 '
+        />
+
+        <img
+          src='/rightwing.png'
+          width='500px'
+          height='1200px'
+          className='absolute right-0 top-0  -z-10 '
+        />
+
+        <div className='flex flex-col gap-0 justify-start'>
+          <div className='bg-white relative z-20 text-black flex justify-center text-2xl py-5 font-bold'>
+            {[...Array(n)].map((e, i) => (
+              <div className=' text-nowrap mx-7'>
+                SCROLL TO EXPLORE
+              </div>
+            ))}
           </div>
-        ))}
-      </div>
-      <div
-        className='bg-[#fe0037]  relative z-10 text-white flex justify-center text-2xl py-5 font-bold '
-        style={{ transform: 'rotate(-2deg)' }}
-      >
-        {[...Array(n)].map((e, i) => (
-          <div className=' text-nowrap mx-7'>
-            UNLEASH YOUR POTENTIAL
+          <div
+            className='bg-[#fe0037] relative z-10 text-white flex justify-center text-2xl py-5 font-bold '
+            style={{ transform: 'rotate(-2deg)' }}
+          >
+            {[...Array(n)].map((e, i) => (
+              <div className=' text-nowrap mx-7'>
+                UNLEASH YOUR POTENTIAL
+              </div>
+            ))}
           </div>
-        ))}
+        </div>
       </div>
+
       <Carouselmain />
     </main>
   )

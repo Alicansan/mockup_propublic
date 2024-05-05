@@ -1,7 +1,7 @@
 import type { Metadata } from 'next'
 import { Teko, Inter } from 'next/font/google'
 import './globals.css'
-import Navbar from './components/Navbar'
+import Navbar from '@/components/Navbar'
 
 const teko = Teko({
   subsets: ['latin'],

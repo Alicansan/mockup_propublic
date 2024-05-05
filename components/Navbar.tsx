@@ -1,7 +1,7 @@
+import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
-import Button from './Button'
 
 const Navbar = () => {
   return (
@@ -30,19 +30,28 @@ const Navbar = () => {
       <div className='flex float-right justify-around'>
         <span className='bg-gray-400 w-[1px] h-[100px] p-0 m-0'></span>
         <div className='flex justify-between m-5 gap-5 '>
-          <Button
+          <Link href='/'>
+            <Button
+              variant='green'
+              className='bg-green-200'
+            >
+              MEMBERSHIP
+            </Button>
+          </Link>
+
+          {/* <Button
             type='button'
-            title='JOIN MEMBERSHIP'
             link='/'
-            variant='btn_green'
-          />
-          <Button
-            type='button'
-            link='/'
-            variant='btn_white'
+            variant='white'
             icon='/user.png'
             className='p-4'
-          />
+          /> */}
+          <Link href='/'>
+            <Button
+              icon='/user.png'
+              variant='white'
+            ></Button>
+          </Link>
         </div>
       </div>
     </nav>

@@ -24,8 +24,13 @@ const Button = ({
       <button
         type={type}
         className={cn(
-          'relative',
-          variant,
+          'relative !rounded-xl',
+          {
+            'bg-[#34fe01] text-black text-3xl content-center font-semibold  flex px-7 py-4 items-center justify-center gap-3 rounded-md':
+              variant === 'btn_green',
+            'bg-white text-black text-3xl content-center font-semibold  flex px-7 py-4 items-center justify-center gap-3 rounded-md':
+              variant === 'btn_white',
+          },
           className
         )}
       >
