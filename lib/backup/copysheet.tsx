@@ -8,7 +8,21 @@ import {
 } from '@/components/ui/carousel'
 import { Caros } from '@/lib/constants'
 
-const Carouselmain = () => {
+type ButtonProp = {
+  className?: string
+  header: string
+  context: string
+  image?: string
+  name: string
+}
+
+const Carouselmain = ({
+  className,
+  header,
+  context,
+  image,
+  name,
+}: ButtonProp) => {
   return (
     <Carousel className='w-full'>
       <CarouselContent className='pl-20 gap-20'>

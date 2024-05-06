@@ -1,4 +1,4 @@
-import Carouselmain from '@/components/Caroselmain'
+import CaroImage from '@/components/CaroImage'
 import Image from 'next/image'
 import Link from 'next/link'
 
@@ -78,7 +78,7 @@ export default function Home() {
         </div>
       </div>
 
-      <Carouselmain />
+      <CaroImage />
     </main>
   )
 }
