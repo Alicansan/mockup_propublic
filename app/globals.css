@@ -5,6 +5,11 @@
 @layer utilities {
   body {
     @apply bg-background text-foreground font-teko;
+    --background-red: bg-[radial-gradient(
+        circle closest-side at left,
+        red 0%,
+        rgba(0, 0, 0, 0) 50%
+      )];
   }
 }
 @layer base {
