@@ -29,12 +29,14 @@ const Navbar = () => {
       </div>
       <div className='flex float-right justify-around'>
         <span className='bg-gray-400 w-[1px] h-[6rem] p-0 m-0'></span>
-        <div className='flex justify-between m-5 gap-5 '>
-          <Link href='/'>
-            <Button variant='green' className=''>
-              JOIN MEMBERSHIP
-            </Button>
-          </Link>
+        <div className='flex justify-between m-5 items-center gap-5 '>
+          <Button //asChild
+            variant='green'
+            className=''
+            asChild
+          >
+            <Link href='/'>JOIN MEMBERSHIP</Link>
+          </Button>
 
           <Link href='/'>
             <Button

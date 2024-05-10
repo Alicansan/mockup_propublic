@@ -86,7 +86,13 @@ export default function Home() {
 
       {/* Body Section */}
       <CaroImage />
-      <div className='flex items-center flex-col font-[400]'>
+      <div className='flex items-center flex-col font-[400] relative '>
+        <img
+          src='/fingradient.svg'
+          width='500px'
+          height='500px'
+          className='absolute left-0 top-0 -mt-[160px]  -z-10 '
+        />
         <p className=' text-4xl font-normal'>
           WE AT PROPUBLIC, BELIEVE THAT
         </p>
@@ -163,7 +169,7 @@ export default function Home() {
             variant='green'
             className=' py-7 rounded-[6px] text-end '
           >
-            ABOUT US
+            EXPLORE MORE COURSES!
           </Button>
         </Link>
       </div>

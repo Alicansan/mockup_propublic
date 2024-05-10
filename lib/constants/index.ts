@@ -108,3 +108,47 @@ export const Icons: Iconsprop[] = [
     link:"/"
   },
  ]
+
+
+ interface CaroVideo {
+  isHot: boolean
+  header: string
+  author: string
+  source: string
+  rating: string
+ }
+
+ export const CaroVideos: CaroVideo[]=[
+  {
+    isHot: true,
+    header: 'COURSE',
+    author: 'John',
+    source: '/',
+    rating: "4.0"
+
+  },
+  {
+    isHot: true,
+    header: 'COURSE',
+    author: 'John',
+    source: '/',
+    rating: "4.0"
+
+  },
+  {
+    isHot: true,
+    header: 'COURSE',
+    author: 'John',
+    source: '/',
+    rating: "4.0"
+
+  },
+  {
+    isHot: true,
+    header: 'COURSE',
+    author: 'John',
+    source: '/',
+    rating: "4.0"
+
+  },
+ ]
