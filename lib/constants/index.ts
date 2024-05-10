@@ -59,3 +59,52 @@ export const Icons: Iconsprop[] = [
   },
 
  ]
+
+ interface QuickLinks {
+  link: string
+  context: string
+ }
+
+ export const quickLinks: QuickLinks[]=[
+  {context:"EXPLORE ALL COURSES",
+    link: "/"
+  },
+  {context:"BECOME A COACH",
+    link: "/"
+  },
+  {context:"JOIN AS MEMBER",
+    link: "/"
+  },
+ ]
+
+ interface PopularGames{
+  context: string
+  link: string
+ }
+
+ export const popularGames: PopularGames[]=[
+  {
+    context:"LEAGUE OF LEGENDS",
+    link:"/"
+  },
+  {
+    context:"CALL OF DUTY",
+    link:"/"
+  },
+  {
+    context:"DOTA 2",
+    link:"/"
+  },
+  {
+    context:"FIFA",
+    link:"/"
+  },
+  {
+    context:"OVERWATCH",
+    link:"/"
+  },
+  {
+    context:"MOBILE LEGENDS",
+    link:"/"
+  },
+ ]

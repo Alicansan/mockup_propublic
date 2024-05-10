@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import { Teko, Inter } from 'next/font/google'
 import './globals.css'
 import Navbar from '@/components/Navbar'
+import Footer from '@/components/Footer'
 
 const teko = Teko({
   subsets: ['latin'],
@@ -29,6 +30,7 @@ export default function RootLayout({
       >
         <Navbar />
         {children}
+        <Footer />
       </body>
     </html>
   )

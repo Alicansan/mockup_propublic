@@ -31,10 +31,7 @@ const Navbar = () => {
         <span className='bg-gray-400 w-[1px] h-[6rem] p-0 m-0'></span>
         <div className='flex justify-between m-5 gap-5 '>
           <Link href='/'>
-            <Button
-              variant='green'
-              className='px-auto rounded-[6px] text-end'
-            >
+            <Button variant='green' className=''>
               JOIN MEMBERSHIP
             </Button>
           </Link>
@@ -43,7 +40,7 @@ const Navbar = () => {
             <Button
               icon='/user.png'
               variant='white'
-              className='rounded-[6px]'
+              className=''
             ></Button>
           </Link>
         </div>
