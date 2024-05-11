@@ -1,4 +1,5 @@
 import CaroImage from '@/components/CaroImage'
+import CaroVideo from '@/components/CaroVideo'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -18,7 +19,6 @@ export default function Home() {
           </span>
         </Link>
       </div>
-
       {/* Hero Section */}
       <div className='h-screen relative flex flex-col justify-evenly mt-11'>
         <div className='text-[180px] font-semibold z-20 text-center  relative flex flex-col'>
@@ -83,7 +83,6 @@ export default function Home() {
         </div>
       </div>
       {/* Hero Section */}
-
       {/* Body Section */}
       <CaroImage />
       <div className='flex items-center flex-col font-[400] relative '>
@@ -110,7 +109,6 @@ export default function Home() {
           </Button>
         </Link>
       </div>
-
       <div className='container'>
         <div className='grid grid-cols-3 gap-x-4'>
           <div className='text-center'>
@@ -153,6 +151,7 @@ export default function Home() {
         </div>
       </div>
       {/* Statistics section */}
+      {/* Videos Section */}
       <div className='flex flex-row justify-between m-[100px]'>
         <p className='uppercase text-7xl font-[500]'>
           Top popular{' '}
@@ -173,6 +172,8 @@ export default function Home() {
           </Button>
         </Link>
       </div>
+      <CaroVideo />
+      {/* Videos Section */}
     </main>
   )
 }

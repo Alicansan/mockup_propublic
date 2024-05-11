@@ -15,9 +15,34 @@ const CaroVideo = () => {
     <Carousel>
       <CarouselContent>
         {[...CaroVideos].map((item, index) => (
-          <CarouselItem key={index} className=''>
-            <div className='flex flex-row h-full gap-10 items-center '></div>
-          </CarouselItem>
+          <div className='bg-[#191919] m-4 p-9 pb-[160px] rounded-xl'>
+            <CarouselItem
+              key={index}
+              className='bg-white flex  flex-row  justify-start  pl-0 basis-[50%] rounded-xl'
+            >
+              <iframe
+                src={item.source}
+                width={750}
+                height={421}
+                className='rounded-xl '
+              ></iframe>
+            </CarouselItem>
+            <div>
+              <h1 className='flex flex-row my-8 justify-items-start text-5xl'>
+                {item.header}
+              </h1>
+              <div className='flex flex-row justify-between'>
+                <h2 className='flex flex-row my-8 justify-items-start text-xl font-Inter uppercase'>
+                  {item.author}
+                </h2>
+                <div className='flex flex-row'>
+                  <h2 className='flex flex-row my-8 justify-items-start text-xl font-Inter uppercase'>
+                    {item.rating}
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
         ))}
       </CarouselContent>
     </Carousel>

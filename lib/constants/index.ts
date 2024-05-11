@@ -123,7 +123,7 @@ export const Icons: Iconsprop[] = [
     isHot: true,
     header: 'COURSE',
     author: 'John',
-    source: '/',
+    source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
     rating: "4.0"
 
   },
@@ -131,7 +131,7 @@ export const Icons: Iconsprop[] = [
     isHot: true,
     header: 'COURSE',
     author: 'John',
-    source: '/',
+    source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
     rating: "4.0"
 
   },
@@ -139,7 +139,7 @@ export const Icons: Iconsprop[] = [
     isHot: true,
     header: 'COURSE',
     author: 'John',
-    source: '/',
+    source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
     rating: "4.0"
 
   },
@@ -147,7 +147,7 @@ export const Icons: Iconsprop[] = [
     isHot: true,
     header: 'COURSE',
     author: 'John',
-    source: '/',
+    source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
     rating: "4.0"
 
   },
