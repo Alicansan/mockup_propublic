@@ -13,7 +13,7 @@ import Rating from './Rating'
 
 const CaroVideo = () => {
   return (
-    <Carousel className=''>
+    <Carousel>
       <CarouselContent>
         {[...CaroVideos].map((item, index) => (
           <div className='bg-[#191919] mx-4 my-8  p-9 pb-[10px] rounded-xl relative '>
@@ -32,8 +32,8 @@ const CaroVideo = () => {
               <h1 className='flex flex-row my-8 justify-items-start text-5xl'>
                 {item.header}
               </h1>
-              <div className='flex flex-row justify-between'>
-                <h2 className='flex flex-row my-8 justify-items-start text-xl font-Inter uppercase'>
+              <div className='flex flex-row justify-between mb-4'>
+                <h2 className='flex flex-row  justify-items-start text-xl font-Inter uppercase'>
                   {item.author}
                 </h2>
                 <div className='flex flex-row items-center '>

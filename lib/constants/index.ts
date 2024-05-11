@@ -115,7 +115,7 @@ export const Icons: Iconsprop[] = [
   header: string
   author: string
   source: string
-  rating: string
+  
  }
 
  export const CaroVideos: CaroVideo[]=[
@@ -124,7 +124,7 @@ export const Icons: Iconsprop[] = [
     header: 'GIT GUD WITH GILLIAN GOODMAN',
     author: 'John',
     source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
-    rating: "4.0"
+    
 
   },
   {
@@ -132,7 +132,7 @@ export const Icons: Iconsprop[] = [
     header: 'GIT GUD WITH GILLIAN GOODMAN',
     author: 'John',
     source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
-    rating: "4.0"
+    
 
   },
   {
@@ -140,7 +140,7 @@ export const Icons: Iconsprop[] = [
     header: 'GIT GUD WITH GILLIAN GOODMAN',
     author: 'John',
     source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
-    rating: "4.0"
+    
 
   },
   {
@@ -148,7 +148,71 @@ export const Icons: Iconsprop[] = [
     header: 'GIT GUD WITH GILLIAN GOODMAN',
     author: 'John',
     source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
-    rating: "4.0"
+    
 
+  },
+ ]
+
+ interface CaroCoach {
+  author: string
+  image: string
+  background: string
+ }
+
+ export const CaroCoachs: CaroCoach[]=[
+  {
+    
+    author: 'John',
+    image: '/coach1.png',
+    background: '/coachbg1.svg'
+    
+
+  },
+  {
+    
+    author: 'Alex',
+    image: '/coach2.png',
+    background: '/coachbg2.svg'
+    
+
+  },
+  {
+    
+    author: 'Robert',
+    image: '/coach1.png',
+    background: '/coachbg1.svg'
+    
+
+  },
+  {
+    
+    author: 'Jason',
+    image: '/coach2.png',
+    background: '/coachbg2.svg'
+    
+
+  },
+ ]
+
+
+ interface CarosGames{
+  image: string
+ }
+
+ export const CaroGame= [
+  {
+    image: '/counterstrike.png',
+  },
+  {
+    image: '/fifa.png',
+  },
+  {
+    image: '/mobilelegends.png',
+  },
+  {
+    image: '/overwatch.png',
+  },
+  {
+    image: '/csgo.png',
   },
  ]

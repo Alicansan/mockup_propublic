@@ -1,3 +1,5 @@
+import CaroCoaches from '@/components/CaroCoaches'
+import CaroGames from '@/components/CaroGames'
 import CaroImage from '@/components/CaroImage'
 import CaroVideo from '@/components/CaroVideo'
 import { Button } from '@/components/ui/button'
@@ -195,7 +197,31 @@ export default function Home() {
           </Button>
         </Link>
       </div>
+      <CaroCoaches />
       {/* Coaches Section */}
+      {/* Games Section */}
+      <div className='flex flex-row justify-center m-[100px] '>
+        <p className='uppercase text-7xl font-[500]  flex-col text-center '>
+          pick your<br></br>
+          <span className='relative w-full'>
+            favourite games{' '}
+            <img
+              src='/scribble.svg'
+              className='absolute bottom-0 right-0'
+            />
+          </span>
+        </p>
+      </div>
+      <CaroGames />
+      <Link href='/'>
+        <Button
+          variant='green'
+          className=' py-7 rounded-[6px] text-end '
+        >
+          BROWSE ALL GAMES
+        </Button>
+      </Link>
+      {/* Games Section */}
     </main>
   )
 }

@@ -41,7 +41,7 @@ const Rating = ({ ratingpoint }: RatingProps) => {
                   ratingValue <=
                   ((hover || rating) ?? 0)
                     ? '#2fff00'
-                    : '#000000'
+                    : '#4fa562'
                 }
                 onMouseEnter={() =>
                   setHover(ratingValue)
@@ -54,7 +54,7 @@ const Rating = ({ ratingpoint }: RatingProps) => {
           </>
         )
       })}
-      <h2 className='ml-4 flex-row my-8 justify-items-start text-xl font-Inter uppercase '>
+      <h2 className='ml-4 flex-row  justify-items-start text-xl font-Inter uppercase '>
         {ratingpoint}
       </h2>
     </>
