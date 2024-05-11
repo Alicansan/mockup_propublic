@@ -121,7 +121,15 @@ export const Icons: Iconsprop[] = [
  export const CaroVideos: CaroVideo[]=[
   {
     isHot: true,
-    header: 'COURSE',
+    header: 'GIT GUD WITH GILLIAN GOODMAN',
+    author: 'John',
+    source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
+    rating: "4.0"
+
+  },
+  {
+    isHot: false,
+    header: 'GIT GUD WITH GILLIAN GOODMAN',
     author: 'John',
     source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
     rating: "4.0"
@@ -129,7 +137,7 @@ export const Icons: Iconsprop[] = [
   },
   {
     isHot: true,
-    header: 'COURSE',
+    header: 'GIT GUD WITH GILLIAN GOODMAN',
     author: 'John',
     source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
     rating: "4.0"
@@ -137,15 +145,7 @@ export const Icons: Iconsprop[] = [
   },
   {
     isHot: true,
-    header: 'COURSE',
-    author: 'John',
-    source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
-    rating: "4.0"
-
-  },
-  {
-    isHot: true,
-    header: 'COURSE',
+    header: 'GIT GUD WITH GILLIAN GOODMAN',
     author: 'John',
     source: 'https://www.youtube.com/embed/5ttW-1i6pIc?si=t-yQSzr1B1SfHvL4',
     rating: "4.0"

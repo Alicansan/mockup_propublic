@@ -42,7 +42,7 @@ const Navbar = () => {
             <Button
               icon='/user.png'
               variant='white'
-              className=''
+              className='px-6'
             ></Button>
           </Link>
         </div>

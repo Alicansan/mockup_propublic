@@ -174,6 +174,28 @@ export default function Home() {
       </div>
       <CaroVideo />
       {/* Videos Section */}
+      {/* Coaches Section */}
+      <div className='flex flex-row justify-between m-[100px]'>
+        <p className='uppercase text-7xl font-[500]'>
+          our professional{' '}
+          <span className='relative w-full'>
+            coaches{' '}
+            <img
+              src='/scribble.svg'
+              className='absolute bottom-0 right-0'
+            />
+          </span>
+        </p>
+        <Link href='/'>
+          <Button
+            variant='green'
+            className=' py-7 rounded-[6px] text-end '
+          >
+            BECOME A COACH!
+          </Button>
+        </Link>
+      </div>
+      {/* Coaches Section */}
     </main>
   )
 }

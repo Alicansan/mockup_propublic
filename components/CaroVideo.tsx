@@ -9,13 +9,14 @@ import {
 import { CaroVideos } from '@/lib/constants'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+import Rating from './Rating'
 
 const CaroVideo = () => {
   return (
-    <Carousel>
+    <Carousel className=''>
       <CarouselContent>
         {[...CaroVideos].map((item, index) => (
-          <div className='bg-[#191919] m-4 p-9 pb-[160px] rounded-xl'>
+          <div className='bg-[#191919] mx-4 my-8  p-9 pb-[10px] rounded-xl relative '>
             <CarouselItem
               key={index}
               className='bg-white flex  flex-row  justify-start  pl-0 basis-[50%] rounded-xl'
@@ -35,13 +36,17 @@ const CaroVideo = () => {
                 <h2 className='flex flex-row my-8 justify-items-start text-xl font-Inter uppercase'>
                   {item.author}
                 </h2>
-                <div className='flex flex-row'>
-                  <h2 className='flex flex-row my-8 justify-items-start text-xl font-Inter uppercase'>
-                    {item.rating}
-                  </h2>
+                <div className='flex flex-row items-center '>
+                  <Rating />
                 </div>
               </div>
             </div>
+            {item.isHot && (
+              <img
+                src='/carofire.svg'
+                className='absolute -top-12 -left-12 '
+              />
+            )}
           </div>
         ))}
       </CarouselContent>
