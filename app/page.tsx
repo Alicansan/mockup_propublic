@@ -12,6 +12,7 @@ export default function Home() {
 
   return (
     <main className=' mt-[7rem] w-full mx-auto max-w-[89rem] h-full'>
+      {/* Hero Section */}
       <div className='bg-[#2fff00] font-Inter text-black flex justify-center text-sm py-2 font-small'>
         A NEW COURSE HAS BEEN UPDATED! "HOW TO
         MAINTAIN TEAMMATE COMMUNICATING SKILLS"{' '}
@@ -21,8 +22,8 @@ export default function Home() {
           </span>
         </Link>
       </div>
-      {/* Hero Section */}
-      <div className='h-screen relative flex flex-col justify-evenly mt-11'>
+
+      <div className=' relative flex flex-col justify-evenly mt-11'>
         <div className='text-[180px] font-semibold z-20 text-center  relative flex flex-col'>
           <h1 className='sr-only'>
             Unleash your gaming potential.
@@ -63,27 +64,28 @@ export default function Home() {
           height='1000px'
           className='absolute right-0 top-0 -mt-[160px]  -z-10 '
         />
-
-        <div className='flex flex-col gap-0 justify-start -mb-10'>
-          <div className='bg-white relative z-20 text-black flex justify-center text-2xl py-5 font-bold'>
-            {[...Array(n)].map((e, i) => (
-              <div className=' text-nowrap mx-7'>
-                SCROLL TO EXPLORE
-              </div>
-            ))}
-          </div>
-          <div
-            className='bg-[#fe0037] relative z-10 text-white flex justify-center text-2xl py-5 font-bold '
-            style={{ transform: 'rotate(-2deg)' }}
-          >
-            {[...Array(z)].map((e, i) => (
-              <div className=' text-nowrap mx-7 z-0 overflow'>
-                UNLEASH YOUR POTENTIAL
-              </div>
-            ))}
-          </div>
+      </div>
+      {/* Stripes */}
+      <div className='flex flex-col gap-0 justify-start mt-[90px] mb-[200px]'>
+        <div className='bg-white relative z-20 text-black flex justify-center text-2xl py-5 font-bold'>
+          {[...Array(n)].map((e, i) => (
+            <div className=' text-nowrap mx-7'>
+              SCROLL TO EXPLORE
+            </div>
+          ))}
+        </div>
+        <div
+          className='bg-[#fe0037] relative z-10 text-white flex justify-center text-2xl py-5 font-bold '
+          style={{ transform: 'rotate(-2deg)' }}
+        >
+          {[...Array(z)].map((e, i) => (
+            <div className=' text-nowrap mx-7 z-0 overflow'>
+              UNLEASH YOUR POTENTIAL
+            </div>
+          ))}
         </div>
       </div>
+      {/* Stripes */}
       {/* Hero Section */}
       {/* Body Section */}
       <CaroImage />
@@ -111,6 +113,7 @@ export default function Home() {
           </Button>
         </Link>
       </div>
+      {/* Statistics */}
       <div className='container'>
         <div className='grid grid-cols-3 gap-x-4'>
           <div className='text-center'>
@@ -216,12 +219,104 @@ export default function Home() {
       <Link href='/'>
         <Button
           variant='green'
-          className=' py-7 rounded-[6px] text-end '
+          className=' py-7 rounded-[6px] text-end mb-10'
         >
           BROWSE ALL GAMES
         </Button>
       </Link>
       {/* Games Section */}
+      {/* Stripes */}
+      <div className='flex flex-col gap-0 justify-start -mb-10'>
+        <div className='bg-white relative z-20 text-black flex justify-center text-2xl py-5 font-bold'>
+          {[...Array(n)].map((e, i) => (
+            <div className=' text-nowrap mx-7'>
+              SCROLL TO EXPLORE
+            </div>
+          ))}
+        </div>
+        <div
+          className='bg-[#fe0037] relative z-10 text-white flex justify-center text-2xl py-5 font-bold '
+          style={{ transform: 'rotate(-2deg)' }}
+        >
+          {[...Array(z)].map((e, i) => (
+            <div className=' text-nowrap mx-7 z-0 overflow'>
+              UNLEASH YOUR POTENTIAL
+            </div>
+          ))}
+        </div>
+      </div>
+      {/* Stripes */}
+      <div className='flex flex-row justify-start m-[100px] '>
+        <p className='uppercase text-7xl font-[500]  flex-col text-start '>
+          INTERESTED?<br></br>
+          HERE'S HOW{' '}
+          <span className='relative w-full'>
+            YOU CAN START!
+            <img
+              src='/scribble.svg'
+              className='absolute bottom-0 right-0'
+            />
+          </span>
+        </p>
+      </div>
+      <div className='relative max-w-auto - flex flex-row mx-[200px]'>
+        <img
+          src='/stripes.svg'
+          className=' my-5'
+        />
+        <img
+          src='/circledot.svg'
+          className='absolute top-1.5 left-0 '
+        />
+        <img
+          src='/circledot.svg'
+          className='absolute top-1.5 left-[480px] '
+        />
+        <img
+          src='/circledot.svg'
+          className='absolute top-1.5 left-[920px] '
+        />
+        <p className=''>HAVE FUN!</p>
+      </div>
+      <div className='container mb-16'>
+        <div className='grid grid-cols-3 gap-x-4'>
+          <div className='text-center '>
+            <h1 className='text-[152px] font-bold  leading-none text-red-600'>
+              01{' '}
+            </h1>
+            <h1 className='text-[36px]'>
+              Pick your choice
+            </h1>
+            <p className='uppercase  container  text-sm font-thin max-w-[250px] font-Inter'>
+              SELECT YOUR GAME AND YOUR COACH.
+            </p>
+          </div>
+          <div className='text-center '>
+            <p className='text-[152px] font-bold  leading-none text-red-600'>
+              02{' '}
+            </p>
+            <h1 className='text-[36px]'>
+              REQUEST BEING PROCESSED
+            </h1>
+            <p className='uppercase  container  text-sm font-thin max-w-[250px] font-Inter'>
+              OUR COACH WILL GET BACK TO YOU
+              WITHIN 24 HOURS.
+            </p>
+          </div>
+          <div className='text-center '>
+            <p className='text-[152px] font-bold  leading-none text-red-600'>
+              03{' '}
+            </p>
+            <h1 className='text-[36px]'>
+              Start scheduling lesson
+            </h1>
+            <p className='uppercase  container  text-sm font-thin max-w-[250px] font-Inter'>
+              START PLANNING OUT LESSON'S SCHEDULE
+              WITH YOUR COACH.
+            </p>
+          </div>
+        </div>
+      </div>
     </main>
   )
 }

@@ -16,14 +16,14 @@ const CaroGames = () => {
     <Carousel>
       <CarouselContent>
         {[...CaroGame].map((item, index) => (
-          <div className='  mb-12 ml-5  border-4 rounded-xl border-gray-800 overflow-clip  '>
+          <div className='  my-7  mx-4 border-4 rounded-xl border-gray-800 overflow-clip  transition duration-300 ease-in-out transform hover:scale-110'>
             <CarouselItem
               key={index}
-              className=' ml-2  w-[350px] h-[410px] object-  mx-auto relative '
+              className='  w-[300px] h-[360px] mx-auto relative pl-0 flex '
             >
               <img
                 src={item.image}
-                className='absolute '
+                className='object-contain object-center transition duration-300 ease-in-out transform hover:scale-110'
               />
             </CarouselItem>
           </div>

@@ -201,18 +201,18 @@ export const Icons: Iconsprop[] = [
 
  export const CaroGame= [
   {
-    image: '/counterstrike.png',
+    image: '/game1.svg',
   },
   {
-    image: '/fifa.png',
+    image: '/game2.svg',
   },
   {
-    image: '/mobilelegends.png',
+    image: '/game1.svg',
   },
   {
-    image: '/overwatch.png',
+    image: '/game4.svg',
   },
   {
-    image: '/csgo.png',
+    image: '/game2.svg',
   },
  ]
