@@ -1,6 +1,7 @@
 import CaroCoaches from '@/components/CaroCoaches'
 import CaroGames from '@/components/CaroGames'
 import CaroImage from '@/components/CaroImage'
+import CaroSponsors from '@/components/CaroSponsors'
 import CaroVideo from '@/components/CaroVideo'
 import { Button } from '@/components/ui/button'
 import Image from 'next/image'
@@ -54,19 +55,19 @@ export default function Home() {
         <img
           src='/leftwing.png'
           width='500px'
-          height='1000px'
+          height='800px'
           className='absolute left-0 top-0 -mt-[160px]  -z-10 '
         />
 
         <img
           src='/rightwing.png'
           width='500px'
-          height='1000px'
+          height='800px'
           className='absolute right-0 top-0 -mt-[160px]  -z-10 '
         />
       </div>
       {/* Stripes */}
-      <div className='flex flex-col gap-0 justify-start mt-[90px] mb-[200px]'>
+      <div className='flex flex-col gap-0 justify-start mt-[90px] mb-[190px]'>
         <div className='bg-white relative z-20 text-black flex justify-center text-2xl py-5 font-bold'>
           {[...Array(n)].map((e, i) => (
             <div className=' text-nowrap mx-7'>
@@ -266,17 +267,19 @@ export default function Home() {
         />
         <img
           src='/circledot.svg'
-          className='absolute top-1.5 left-0 '
+          className='absolute top-1.5 -left-0 '
         />
         <img
           src='/circledot.svg'
-          className='absolute top-1.5 left-[480px] '
+          className='absolute top-1.5 left-[440px] '
         />
         <img
           src='/circledot.svg'
-          className='absolute top-1.5 left-[920px] '
+          className='absolute top-1.5 left-[890px] '
         />
-        <p className=''>HAVE FUN!</p>
+        <p className='whitespace-nowrap text-3xl'>
+          HAVE FUN!
+        </p>
       </div>
       <div className='container mb-16'>
         <div className='grid grid-cols-3 gap-x-4'>
@@ -317,6 +320,64 @@ export default function Home() {
           </div>
         </div>
       </div>
+      <div className='bg-red-600 flex justify-evenly  w-4/6 mx-auto my-11 rounded-xl py-3'>
+        <div className='w-1/3 whitespace-pre-wrap flex flex-col justify-center py-12'>
+          <p className='font-bold text-5xl'>
+            BE A MEMBER & GET ACCESS ON ALL
+            COURSES!
+          </p>
+          <p className='font-bold text-5xl'>
+            $10 /{' '}
+            <span className='text-3xl'>
+              Month
+            </span>
+          </p>{' '}
+        </div>
+        <div className='bg-white text-black  rounded-xl p-12'>
+          <h2 className='text-xl'>
+            WHAT YOU'LL GET AS A MEMBER:
+          </h2>
+          <ul className='list-disc mb-11'>
+            <li>
+              FULL ACCESS TO ALL ONLINE COURSES,
+              GUIDES AND VIDEOS,
+            </li>
+            <li>
+              GET THE LATEST GAMING UPDATES ON NEW
+              TECHNIQUES,
+            </li>
+            <li>
+              GET REWARDS OF FREE COURSES EVERY
+              NEW SEASON,
+            </li>
+            <li>DIRECTLY SUPPORT THE CREATORS</li>
+            <li>ACCESS TO 20+ GAMES</li>
+          </ul>
+          <Link href='/'>
+            <Button
+              variant='green'
+              className=' px-14'
+            >
+              BECOME A MEMBER!
+            </Button>
+          </Link>
+        </div>
+      </div>
+      {/* Sponsors */}
+      <div className='flex justify-center m-[100px] '>
+        <p className='uppercase text-7xl font-[500]  text-center '>
+          our trusted{' '}
+          <span className='relative w-full'>
+            partners{' '}
+            <img
+              src='/scribble.svg'
+              className='absolute bottom-0 right-0'
+            />
+          </span>
+        </p>
+      </div>
+      <CaroSponsors />
+      {/* Sponsors */}
     </main>
   )
 }

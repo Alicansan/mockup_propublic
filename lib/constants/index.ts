@@ -216,3 +216,31 @@ export const Icons: Iconsprop[] = [
     image: '/game2.svg',
   },
  ]
+
+ interface SponsorProp {
+  name: string
+  image: string
+ }
+
+ export const Sponsors =[
+  {
+    name: 'TEAM LIQUID',
+    image:'/sponsor1.svg'
+  },
+  {
+    name: 'RRQ',
+    image:'/sponsor2.svg'
+  },
+  {
+    name: 'BOOM',
+    image:'/sponsor3.svg'
+  },
+  {
+    name: 'DEWA UNITED',
+    image:'/sponsor4.svg'
+  },
+  {
+    name: 'EVOS',
+    image:'/sponsor5.svg'
+  },
+ ]
