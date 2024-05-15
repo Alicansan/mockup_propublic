@@ -244,3 +244,42 @@ export const Icons: Iconsprop[] = [
     image:'/sponsor5.svg'
   },
  ]
+
+ interface Reviews{
+   review: string
+   image: string
+   username: string
+   coachname: string
+   gamename: string
+ }
+
+ export const UserReview = [
+  {
+    review: 'Amazing coaching session! Learned so much about strategy and teamwork.',
+    image: '/propic.svg',
+    username: 'Alex Johnson',
+    coachname: 'Coach Mike',
+    gamename: 'League of Legends',
+  },
+  {
+    review: 'Improved my skills drastically in just a few sessions. Highly recommend!',
+    image: '/propic.svg',
+    username: 'Sara Lee',
+    coachname: 'Coach Emily',
+    gamename: 'Overwatch',
+  },
+  {
+    review: 'Great experience! The coach helped me understand advanced tactics.',
+    image: '/propic.svg',
+    username: 'Jake Martinez',
+    coachname: 'Coach Dave',
+    gamename: 'CS:GO',
+  },
+  {
+    review: 'Learned new techniques that I never thought of before. Fantastic coach!',
+    image: '/propic.svg',
+    username: 'Megan Brown',
+    coachname: 'Coach Sarah',
+    gamename: 'Dota 2',
+  },
+];

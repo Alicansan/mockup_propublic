@@ -1,6 +1,7 @@
 import CaroCoaches from '@/components/CaroCoaches'
 import CaroGames from '@/components/CaroGames'
 import CaroImage from '@/components/CaroImage'
+import CaroReviews from '@/components/CaroReviews'
 import CaroSponsors from '@/components/CaroSponsors'
 import CaroVideo from '@/components/CaroVideo'
 import { Button } from '@/components/ui/button'
@@ -376,8 +377,30 @@ export default function Home() {
           </span>
         </p>
       </div>
+      <p className='uppercase flex justify-center font-extralight '>
+        we partner with the region’s expertise to
+        provide the best coaching lessons and
+        coach vidEos.
+      </p>
       <CaroSponsors />
       {/* Sponsors */}
+
+      {/* Reviews */}
+      <div className='flex justify-center m-[100px] '>
+        <p className='uppercase text-7xl font-[500]  text-start '>
+          TRUST THE RESULTS, <br /> JUST READ WHAT{' '}
+          <span className='relative w-full'>
+            OUR STUDENTS{' '}
+            <img
+              src='/scribble.svg'
+              className='absolute bottom-0 right-0'
+            />
+          </span>
+          SAY
+        </p>
+      </div>
+      <CaroReviews />
+      {/* Reviews */}
     </main>
   )
 }
