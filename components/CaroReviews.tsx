@@ -9,6 +9,12 @@ import { UserReview } from '@/lib/constants'
 const CaroReviews = () => {
   return (
     <Carousel className=''>
+      <img
+        src='/fingradient.svg'
+        width='500px'
+        height='500px'
+        className='absolute left-0  -mt-[160px]  -z-10 '
+      />
       <CarouselContent className=' '>
         {[...UserReview].map((item, index) => (
           <CarouselItem
