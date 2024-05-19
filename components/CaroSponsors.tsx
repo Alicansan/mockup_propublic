@@ -18,11 +18,11 @@ const CaroSponsors = () => {
         src='/fingradientmid.svg'
         width='500px'
         height='500px'
-        className='absolute m-auto left-0 right-0 -top-48 -z-10 '
+        className='absolute m-auto left-0 right-0 -top-48 -z-10'
       />
       <CarouselContent className='my-11'>
         {[...Sponsors].map((item, index) => (
-          <div className=' b  mx-auto flex flex-col  justify-center text-center  border-4 rounded-xl border-gray-500   transition duration-300 ease-in-out transform hover:scale-110'>
+          <div className=' b  mx-auto flex flex-col  bg-white/5 justify-center text-center  border-4 rounded-xl border-gray-500   transition duration-300 ease-in-out transform hover:scale-110'>
             <CarouselItem
               key={index}
               className='mx-auto  pl-0 flex justify-center'

@@ -3,7 +3,7 @@ import {
   quickLinks,
   popularGames,
 } from '@/lib/constants'
-import Image from 'next/image'
+
 import Link from 'next/link'
 import React from 'react'
 import { Button } from './ui/button'
@@ -15,7 +15,7 @@ const Footer = () => {
       <div className='p-4 flex  flex-row justify-around items-start '>
         <div className='items-center flex flex-col'>
           <div className=' flex flex-row mb-11 '>
-            <Image
+            <img
               src='/propublic.png'
               alt='logo'
               width={86}
@@ -37,7 +37,7 @@ const Footer = () => {
             </p>
             <div className='flex flex-row gap-5 mt-3 '>
               {Icons.map((item) => (
-                <Image
+                <img
                   className='bg-white'
                   src={item.image}
                   alt={item.name}

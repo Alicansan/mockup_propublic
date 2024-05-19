@@ -19,19 +19,19 @@ const CaroReviews = () => {
         {[...UserReview].map((item, index) => (
           <CarouselItem
             key={index}
-            className=' min-w-[720px] border-2 border-gray-600 m-12  rounded-xl h-[465px] shrink'
+            className=' min-w-[680px] border-2 border-gray-600 m-12  bg-gray-400/5  rounded-xl h-[465px] shrink'
           >
             <div className=' m-12  uppercase '>
               <p className='text-2xl font-thin font-Inter   '>
                 "{item.review}"
               </p>
-              <div className='flex flex-row  mt-[230px]'>
+              <div className='flex flex-row  mt-[230px] '>
                 <img
                   src={item.image}
                   width={64}
                   height={64}
                 />
-                <p className='pl-7 pt-3 text-2xl font-medium text-white flex-col flex'>
+                <div className='pl-7 pt-3 text-2xl font-medium text-white flex-col flex '>
                   {item.username}
                   <p className='   inline gap-2 text-white text-sm'>
                     {item.gamename} BY{' '}
@@ -39,7 +39,7 @@ const CaroReviews = () => {
                       {item.coachname}
                     </span>
                   </p>
-                </p>
+                </div>
               </div>
             </div>
           </CarouselItem>

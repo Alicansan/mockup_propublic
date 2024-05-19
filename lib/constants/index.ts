@@ -1,3 +1,5 @@
+import { Stringifier } from "postcss"
+
  interface Caro {
   name: string
   header: string
@@ -283,3 +285,127 @@ export const Icons: Iconsprop[] = [
     gamename: 'Dota 2',
   },
 ];
+
+
+interface CoachPageProps {
+  ProfileCard: {
+    name: string
+    image: string
+    achievements: string[]
+    games: string[]
+    roles: string[]
+    bio: string
+
+
+  },
+  CoachDashboard:{
+    sessions: {
+      header: string
+      hours: string
+      context: string
+      howMuch: string
+    }[];
+    trainingPlans: {
+      header: string
+      sessionCount: string
+      context: string
+      fee: string 
+    }[];
+    courses: {
+      vidUrl: string
+      name:string
+      fee:string 
+    }[];
+    faqs:{
+      header: string
+      answer: string
+    }[]
+
+  },
+  CoachReviews:{
+    name: string
+    gameName: string
+    comment: string
+  }[];
+}
+
+export const coaches: CoachPageProps[] = [
+  {
+    ProfileCard: {
+      name: "John Doe",
+      image: "",
+      achievements: ["First Place in CS:GO Tournament", "Top 10 in Dota Championship"],
+      games: ["CS:GO", "Mobile Legends", "Dota"],
+      roles: ["Support", "Assassin", "Mid", "Jungle"],
+      bio: "John Doe is an experienced esports player with a passion for competitive gaming.",
+    },
+    CoachDashboard: {
+      sessions: [
+        {
+          header: "CS:GO Training Session",
+          hours: "10 AM - 12 PM",
+          context: "Aim Practice and Strategy",
+          howMuch: "$50",
+        },
+        {
+          header: "Dota Strategy Workshop",
+          hours: "2 PM - 4 PM",
+          context: "Drafting and Team Coordination",
+          howMuch: "$75",
+        },
+      ],
+      trainingPlans: [
+        {
+          header: "CS:GO Basics",
+          sessionCount: "5 sessions",
+          context: "Introduction to CS:GO mechanics",
+          fee: "$200",
+        },
+        {
+          header: "Dota Masterclass",
+          sessionCount: "10 sessions",
+          context: "Advanced strategies for Dota 2",
+          fee: "$350",
+        },
+      ],
+      courses: [
+        {
+          vidUrl: "https://example.com/csgo-course",
+          name: "CS:GO Aim Training Course",
+          fee: "$100",
+        },
+        {
+          vidUrl: "https://example.com/dota-course",
+          name: "Dota 2 Strategy Guide",
+          fee: "$150",
+        },
+      ],
+      faqs: [
+        {
+          header: "What is CS:GO?",
+          answer: "CS:GO is a popular first-person shooter game developed by Valve Corporation.",
+        },
+        {
+          header: "How can I improve my Dota skills?",
+          answer: "Improving your Dota skills requires practice, teamwork, and understanding game mechanics.",
+        },
+      ],
+    },
+    CoachReviews: [
+      {
+        name: "Alice",
+        gameName: "Mobile Legends",
+        comment: "John Doe's coaching helped me climb the ranks!",
+      },
+      {
+        name: "Bob",
+        gameName: "CS:GO",
+        comment: "Great sessions with valuable insights!",
+      },
+    ],
+  },
+ 
+];
+
+
+
