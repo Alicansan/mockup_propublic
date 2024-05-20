@@ -44,19 +44,19 @@ interface Iconsprop {
 
 export const Icons: Iconsprop[] = [
   {
-    image:"icons8-facebook.svg",
+    image:"/icons8-facebook.svg",
     name:"facebook",
   },
   {
-    image:"icons8-instagram.svg",
+    image:"/icons8-instagram.svg",
     name:"instagram",
   },
   {
-    image:"icons8-twitterx.svg",
+    image:"/icons8-twitterx.svg",
     name:"twitterx",
   },
   {
-    image:"icons8-youtube.svg",
+    image:"/icons8-youtube.svg",
     name:"youtube",
   },
 
@@ -288,7 +288,7 @@ export const Icons: Iconsprop[] = [
 
 
 interface CoachPageProps {
-  ProfileCard: {
+  profileCard: {
     name: string
     image: string
     achievements: string[]
@@ -331,9 +331,9 @@ interface CoachPageProps {
 
 export const coaches: CoachPageProps[] = [
   {
-    ProfileCard: {
+    profileCard: {
       name: "John Doe",
-      image: "",
+      image: "/coach1.png",
       achievements: ["First Place in CS:GO Tournament", "Top 10 in Dota Championship"],
       games: ["CS:GO", "Mobile Legends", "Dota"],
       roles: ["Support", "Assassin", "Mid", "Jungle"],
@@ -404,8 +404,184 @@ export const coaches: CoachPageProps[] = [
       },
     ],
   },
- 
+  {
+    profileCard: {
+      name: "Jane Smith",
+      image: "/coach2.png",
+      achievements: ["Champion in Mobile Legends Tournament", "Best Mid Player Award"],
+      games: ["Mobile Legends", "Dota", "CS:GO"],
+      roles: ["Mid", "Assassin", "Support", "Jungle"],
+      bio: "Jane Smith has been a professional gamer for over 5 years and excels in Mobile Legends and Dota.",
+    },
+    CoachDashboard: {
+      sessions: [
+        {
+          header: "Mobile Legends Strategy Session",
+          hours: "1 PM - 3 PM",
+          context: "Hero Selection and Tactics",
+          howMuch: "$60",
+        },
+        {
+          header: "Dota Skills Workshop",
+          hours: "4 PM - 6 PM",
+          context: "Advanced Gameplay Techniques",
+          howMuch: "$80",
+        },
+      ],
+      trainingPlans: [
+        {
+          header: "Mobile Legends Mastery",
+          sessionCount: "7 sessions",
+          context: "In-depth Mobile Legends training",
+          fee: "$250",
+        },
+        {
+          header: "Dota Advanced Strategies",
+          sessionCount: "8 sessions",
+          context: "High-level strategies for competitive play",
+          fee: "$300",
+        },
+      ],
+      courses: [
+        {
+          vidUrl: "https://example.com/mobilelegends-course",
+          name: "Mobile Legends Complete Guide",
+          fee: "$120",
+        },
+        {
+          vidUrl: "https://example.com/dota-advanced-course",
+          name: "Dota Advanced Strategies",
+          fee: "$160",
+        },
+      ],
+      faqs: [
+        {
+          header: "What are the key roles in Mobile Legends?",
+          answer: "The key roles in Mobile Legends include Tank, Fighter, Assassin, Mage, Marksman, and Support.",
+        },
+        {
+          header: "How do I improve my rank in Dota?",
+          answer: "Consistent practice, understanding game mechanics, and effective communication with your team are crucial.",
+        },
+      ],
+    },
+    CoachReviews: [
+      {
+        name: "Charlie",
+        gameName: "Dota",
+        comment: "Jane's coaching took my gameplay to the next level!",
+      },
+      {
+        name: "Dave",
+        gameName: "Mobile Legends",
+        comment: "Excellent coaching sessions, highly recommend!",
+      },
+    ],
+  },
+  {
+    profileCard: {
+      name: "Mike Johnson",
+      image: "/coach3.png",
+      achievements: ["MVP in Dota International", "Top 5 in CS:GO World Championship"],
+      games: ["Dota", "CS:GO", "Mobile Legends"],
+      roles: ["Jungle", "Mid", "Assassin", "Support"],
+      bio: "Mike Johnson is a versatile esports player known for his strategic mind and exceptional skills in Dota and CS:GO.",
+    },
+    CoachDashboard: {
+      sessions: [
+        {
+          header: "Dota Jungle Workshop",
+          hours: "11 AM - 1 PM",
+          context: "Jungle Pathing and Efficiency",
+          howMuch: "$70",
+        },
+        {
+          header: "CS:GO Advanced Tactics",
+          hours: "3 PM - 5 PM",
+          context: "Team Coordination and Strategy",
+          howMuch: "$90",
+        },
+      ],
+      trainingPlans: [
+        {
+          header: "Dota Jungle Mastery",
+          sessionCount: "6 sessions",
+          context: "Mastering the Jungle role in Dota",
+          fee: "$220",
+        },
+        {
+          header: "CS:GO Team Play",
+          sessionCount: "8 sessions",
+          context: "Advanced team play techniques",
+          fee: "$280",
+        },
+      ],
+      courses: [
+        {
+          vidUrl: "https://example.com/dota-jungle-course",
+          name: "Dota Jungle Mastery Course",
+          fee: "$130",
+        },
+        {
+          vidUrl: "https://example.com/csgo-tactics-course",
+          name: "CS:GO Advanced Tactics",
+          fee: "$180",
+        },
+      ],
+      faqs: [
+        {
+          header: "What is the Jungle role in Dota?",
+          answer: "The Jungle role involves farming neutral creeps in the jungle and ganking lanes to help your team.",
+        },
+        {
+          header: "How do I improve my CS:GO team coordination?",
+          answer: "Effective communication, understanding your role, and practicing team strategies are essential.",
+        },
+      ],
+    },
+    CoachReviews: [
+      {
+        name: "Eve",
+        gameName: "CS:GO",
+        comment: "Mike's advanced tactics sessions are a game changer!",
+      },
+      {
+        name: "Frank",
+        gameName: "Dota",
+        comment: "Learned so much about the Jungle role, highly recommended!",
+      },
+    ],
+  }
 ];
 
 
 
+// interface ProfileCard {
+//   name: string
+//   image: string
+//   achievement: string[]
+//   games: string[]
+//   roles: string[]
+//   bio: string
+// }
+
+// interface Session {
+//   header: string
+//   hours: string
+//   context: string
+//   howMuch: string
+// }[]
+
+// interface CoachReview {
+//   name: string
+//   gameName: string
+//   comment: string
+// }
+
+// interface CoachPageProps {
+//   profileCard: ProfileCard
+//   coachDashboard: {
+//     sessions: Session[]
+//   }
+//   coachReviews: CoachReview[]
+// }
