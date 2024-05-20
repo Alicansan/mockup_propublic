@@ -13,9 +13,11 @@ export default function Coach({
   return (
     <main className='mt-[7rem] w-full mx-auto max-w-[89rem] h-full'>
       <div className=''>
-        <CoachProfileCard
-          {...coaches.[0][1]}
-        />
+        {coaches.map((coach) => (
+          <CoachProfileCard
+            {...coach.profileCard}
+          />
+        ))}
       </div>
     </main>
   )
