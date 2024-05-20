@@ -289,6 +289,7 @@ export const Icons: Iconsprop[] = [
 
 interface CoachPageProps {
   profileCard: {
+    id:string
     name: string
     image: string
     achievements: string[]
@@ -332,6 +333,7 @@ interface CoachPageProps {
 export const coaches: CoachPageProps[] = [
   {
     profileCard: {
+      id: "0",
       name: "John Doe",
       image: "/coach1.png",
       achievements: ["First Place in CS:GO Tournament", "Top 10 in Dota Championship"],
@@ -406,6 +408,7 @@ export const coaches: CoachPageProps[] = [
   },
   {
     profileCard: {
+      id: "1",
       name: "Jane Smith",
       image: "/coach2.png",
       achievements: ["Champion in Mobile Legends Tournament", "Best Mid Player Award"],
@@ -480,8 +483,9 @@ export const coaches: CoachPageProps[] = [
   },
   {
     profileCard: {
+      id: "2",
       name: "Mike Johnson",
-      image: "/coach3.png",
+      image: "/coach1.png",
       achievements: ["MVP in Dota International", "Top 5 in CS:GO World Championship"],
       games: ["Dota", "CS:GO", "Mobile Legends"],
       roles: ["Jungle", "Mid", "Assassin", "Support"],
