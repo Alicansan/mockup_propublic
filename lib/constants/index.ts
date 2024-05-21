@@ -159,11 +159,12 @@ export const Icons: Iconsprop[] = [
   author: string
   image: string
   background: string
+  id: string
  }
 
  export const CaroCoachs: CaroCoach[]=[
   {
-    
+    id:'0',
     author: 'John',
     image: '/coach1.png',
     background: '/coachbg1.svg'
@@ -171,7 +172,7 @@ export const Icons: Iconsprop[] = [
 
   },
   {
-    
+    id:'1',
     author: 'Alex',
     image: '/coach2.png',
     background: '/coachbg2.svg'
@@ -179,7 +180,7 @@ export const Icons: Iconsprop[] = [
 
   },
   {
-    
+    id:'2',
     author: 'Robert',
     image: '/coach1.png',
     background: '/coachbg1.svg'
@@ -187,7 +188,7 @@ export const Icons: Iconsprop[] = [
 
   },
   {
-    
+    id:'3',
     author: 'Jason',
     image: '/coach2.png',
     background: '/coachbg2.svg'
@@ -519,6 +520,83 @@ export const coaches: CoachPageProps[] = [
           context: "Advanced team play techniques",
           fee: "$280",
         },
+        
+      ],
+      courses: [
+        {
+          vidUrl: "https://example.com/dota-jungle-course",
+          name: "Dota Jungle Mastery Course",
+          fee: "$130",
+        },
+        {
+          vidUrl: "https://example.com/csgo-tactics-course",
+          name: "CS:GO Advanced Tactics",
+          fee: "$180",
+        },
+      ],
+      faqs: [
+        {
+          header: "What is the Jungle role in Dota?",
+          answer: "The Jungle role involves farming neutral creeps in the jungle and ganking lanes to help your team.",
+        },
+        {
+          header: "How do I improve my CS:GO team coordination?",
+          answer: "Effective communication, understanding your role, and practicing team strategies are essential.",
+        },
+      ],
+    },
+    CoachReviews: [
+      {
+        name: "Eve",
+        gameName: "CS:GO",
+        comment: "Mike's advanced tactics sessions are a game changer!",
+      },
+      {
+        name: "Frank",
+        gameName: "Dota",
+        comment: "Learned so much about the Jungle role, highly recommended!",
+      },
+    ],
+  },
+  {
+    profileCard: {
+      id: "3",
+      name: "Mike Johnson",
+      image: "/coach2.png",
+      achievements: ["MVP in Dota International", "Top 5 in CS:GO World Championship"],
+      games: ["Dota", "CS:GO", "Mobile Legends"],
+      roles: ["Jungle", "Mid", "Assassin", "Support"],
+      bio: "Mike Johnson is a versatile esports player known for his strategic mind and exceptional skills in Dota and CS:GO.",
+    },
+    CoachDashboard: {
+      sessions: [
+        {
+          header: "Dota Jungle Workshop",
+          hours: "11 AM - 1 PM",
+          context: "Jungle Pathing and Efficiency",
+          howMuch: "$70",
+        },
+        {
+          header: "CS:GO Advanced Tactics",
+          hours: "3 PM - 5 PM",
+          context: "Team Coordination and Strategy",
+          howMuch: "$90",
+        },
+      ],
+      trainingPlans: [
+        {
+          header: "Dota Jungle Mastery",
+          sessionCount: "6 sessions",
+          context: "Mastering the Jungle role in Dota",
+          fee: "$220",
+        },
+        {
+          header: "CS:GO Team Play",
+          sessionCount: "8 sessions",
+          context: "Advanced team play techniques",
+          fee: "$280",
+        },
+        
       ],
       courses: [
         {
