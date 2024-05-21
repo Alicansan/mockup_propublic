@@ -311,12 +311,12 @@ interface CoachPageProps {
       header: string
       sessionCount: string
       context: string
-      fee: string 
+      howMuch: string 
     }[];
     courses: {
       vidUrl: string
       name:string
-      fee:string 
+      howMuch:string 
     }[];
     faqs:{
       header: string
@@ -356,31 +356,43 @@ export const coaches: CoachPageProps[] = [
           context: "Drafting and Team Coordination",
           howMuch: "$75",
         },
+        {
+          header: "CS:GO Training Session 2",
+          hours: "10 AM - 12 PM",
+          context: "Aim Practice and Strategy",
+          howMuch: "$50",
+        },
+        {
+          header: "Dota Strategy Workshop 2",
+          hours: "2 PM - 4 PM",
+          context: "Drafting and Team Coordination",
+          howMuch: "$75",
+        },
       ],
       trainingPlans: [
         {
           header: "CS:GO Basics",
           sessionCount: "5 sessions",
           context: "Introduction to CS:GO mechanics",
-          fee: "$200",
+          howMuch: "$200",
         },
         {
           header: "Dota Masterclass",
           sessionCount: "10 sessions",
           context: "Advanced strategies for Dota 2",
-          fee: "$350",
+          howMuch: "$350",
         },
       ],
       courses: [
         {
           vidUrl: "https://example.com/csgo-course",
           name: "CS:GO Aim Training Course",
-          fee: "$100",
+          howMuch: "$100",
         },
         {
           vidUrl: "https://example.com/dota-course",
           name: "Dota 2 Strategy Guide",
-          fee: "$150",
+          howMuch: "$150",
         },
       ],
       faqs: [
@@ -431,31 +443,43 @@ export const coaches: CoachPageProps[] = [
           context: "Advanced Gameplay Techniques",
           howMuch: "$80",
         },
+        {
+          header: "Mobile Legends Strategy Session 2",
+          hours: "1 PM - 3 PM",
+          context: "Hero Selection and Tactics",
+          howMuch: "$60",
+        },
+        {
+          header: "Dota Skills Workshop 2",
+          hours: "4 PM - 6 PM",
+          context: "Advanced Gameplay Techniques",
+          howMuch: "$80",
+        },
       ],
       trainingPlans: [
         {
           header: "Mobile Legends Mastery",
           sessionCount: "7 sessions",
           context: "In-depth Mobile Legends training",
-          fee: "$250",
+          howMuch: "$250",
         },
         {
           header: "Dota Advanced Strategies",
           sessionCount: "8 sessions",
           context: "High-level strategies for competitive play",
-          fee: "$300",
+          howMuch: "$300",
         },
       ],
       courses: [
         {
           vidUrl: "https://example.com/mobilelegends-course",
           name: "Mobile Legends Complete Guide",
-          fee: "$120",
+          howMuch: "$120",
         },
         {
           vidUrl: "https://example.com/dota-advanced-course",
           name: "Dota Advanced Strategies",
-          fee: "$160",
+          howMuch: "$160",
         },
       ],
       faqs: [
@@ -512,13 +536,13 @@ export const coaches: CoachPageProps[] = [
           header: "Dota Jungle Mastery",
           sessionCount: "6 sessions",
           context: "Mastering the Jungle role in Dota",
-          fee: "$220",
+          howMuch: "$220",
         },
         {
           header: "CS:GO Team Play",
           sessionCount: "8 sessions",
           context: "Advanced team play techniques",
-          fee: "$280",
+          howMuch: "$280",
         },
         
       ],
@@ -526,12 +550,12 @@ export const coaches: CoachPageProps[] = [
         {
           vidUrl: "https://example.com/dota-jungle-course",
           name: "Dota Jungle Mastery Course",
-          fee: "$130",
+          howMuch: "$130",
         },
         {
           vidUrl: "https://example.com/csgo-tactics-course",
           name: "CS:GO Advanced Tactics",
-          fee: "$180",
+          howMuch: "$180",
         },
       ],
       faqs: [
@@ -588,13 +612,13 @@ export const coaches: CoachPageProps[] = [
           header: "Dota Jungle Mastery",
           sessionCount: "6 sessions",
           context: "Mastering the Jungle role in Dota",
-          fee: "$220",
+          howMuch: "$220",
         },
         {
           header: "CS:GO Team Play",
           sessionCount: "8 sessions",
           context: "Advanced team play techniques",
-          fee: "$280",
+          howMuch: "$280",
         },
         
       ],
@@ -602,12 +626,12 @@ export const coaches: CoachPageProps[] = [
         {
           vidUrl: "https://example.com/dota-jungle-course",
           name: "Dota Jungle Mastery Course",
-          fee: "$130",
+          howMuch: "$130",
         },
         {
           vidUrl: "https://example.com/csgo-tactics-course",
           name: "CS:GO Advanced Tactics",
-          fee: "$180",
+          howMuch: "$180",
         },
       ],
       faqs: [
