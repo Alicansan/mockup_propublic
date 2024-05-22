@@ -469,8 +469,81 @@ export const coaches: CoachPageProps[] = [
           context: "High-level strategies for competitive play",
           howMuch: "$300",
         },
+        {
+          header: "Mobile Legends Mastery",
+          sessionCount: "7 sessions",
+          context: "In-depth Mobile Legends training",
+          howMuch: "$250",
+        },
+        {
+          header: "Dota Advanced Strategies",
+          sessionCount: "8 sessions",
+          context: "High-level strategies for competitive play",
+          howMuch: "$300",
+        },
+        {
+          header: "Mobile Legends Mastery",
+          sessionCount: "7 sessions",
+          context: "In-depth Mobile Legends training",
+          howMuch: "$250",
+        },
+        {
+          header: "Dota Advanced Strategies",
+          sessionCount: "8 sessions",
+          context: "High-level strategies for competitive play",
+          howMuch: "$300",
+        },
+        {
+          header: "Mobile Legends Mastery",
+          sessionCount: "7 sessions",
+          context: "In-depth Mobile Legends training",
+          howMuch: "$250",
+        },
+        {
+          header: "Dota Advanced Strategies",
+          sessionCount: "8 sessions",
+          context: "High-level strategies for competitive play",
+          howMuch: "$300",
+        },
+        {
+          header: "Mobile Legends Mastery",
+          sessionCount: "7 sessions",
+          context: "In-depth Mobile Legends training",
+          howMuch: "$250",
+        },
+        
       ],
       courses: [
+        {
+          vidUrl: "https://example.com/mobilelegends-course",
+          name: "Mobile Legends Complete Guide",
+          howMuch: "$120",
+        },
+        {
+          vidUrl: "https://example.com/dota-advanced-course",
+          name: "Dota Advanced Strategies",
+          howMuch: "$160",
+        },
+        {
+          vidUrl: "https://example.com/mobilelegends-course",
+          name: "Mobile Legends Complete Guide",
+          howMuch: "$120",
+        },
+        {
+          vidUrl: "https://example.com/dota-advanced-course",
+          name: "Dota Advanced Strategies",
+          howMuch: "$160",
+        },
+        {
+          vidUrl: "https://example.com/mobilelegends-course",
+          name: "Mobile Legends Complete Guide",
+          howMuch: "$120",
+        },
+        {
+          vidUrl: "https://example.com/dota-advanced-course",
+          name: "Dota Advanced Strategies",
+          howMuch: "$160",
+        },
         {
           vidUrl: "https://example.com/mobilelegends-course",
           name: "Mobile Legends Complete Guide",

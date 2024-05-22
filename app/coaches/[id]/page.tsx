@@ -17,15 +17,15 @@ export default function Coach({
   )
   return (
     <main className='mt-[7rem] w-full mx-auto max-w-[89rem] h-full'>
-      <div className='flex flex-row gap-3'>
-        <div className=''>
+      <div className='grid  grid-cols-1 xl:grid-cols-3 mx-12 '>
+        <div className='col-span-1 '>
           {coach && (
             <CoachProfileCard
               {...coach.profileCard}
             />
           )}
         </div>
-        <div>
+        <div className='col-span-2 '>
           {coach && (
             <CoachDashBoard
               {...coach.CoachDashboard}
