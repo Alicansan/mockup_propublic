@@ -143,18 +143,18 @@ const CoachDashBoard = ({
                     className=' w-full h-full'
                   />
                 </div>
-                <div className='flex flex-col justify-between h-[120px] p-3'>
+                <div className='flex flex-col justify-between items-center h-[120px] p-3'>
                   <h1 className='text-2xl '>
                     {item.name}
                   </h1>
                   <h1 className='text-2xl '>
                     {item.howMuch}
                   </h1>
-                  <div>
+                  <div className=' '>
                     <Link href='/' className=''>
                       <Button
                         variant={'green'}
-                        className=' h-10 text-m text-black'
+                        className=' h-10 text-m text-black '
                       >
                         ►
                       </Button>
@@ -164,6 +164,29 @@ const CoachDashBoard = ({
               </div>
             ))}
           </div>
+        </TabsContent>
+        <TabsContent value='faqs'>
+          <Accordion
+            type='single'
+            className='w-full'
+          >
+            {faqs.map((item, index) => (
+              <AccordionItem
+                value={`item-${index}`}
+                key={index}
+                className='m-2 '
+              >
+                <AccordionTrigger className='bg-[#141414]   p-4 text-2xl '>
+                  {item.header}
+                </AccordionTrigger>
+                <AccordionContent className='bg-[#141414]  px-4  uppercase text-gray-200'>
+                  <p className='py-2'>
+                    {item.answer}
+                  </p>
+                </AccordionContent>
+              </AccordionItem>
+            ))}
+          </Accordion>
         </TabsContent>
       </Tabs>
     </div>

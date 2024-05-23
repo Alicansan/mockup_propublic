@@ -54,9 +54,9 @@ const Rating = ({ ratingpoint }: RatingProps) => {
           </>
         )
       })}
-      <h2 className='ml-4 flex-row  justify-items-start text-xl font-Inter uppercase '>
+      <h3 className='ml-2 whi flex-row  justify-items-start text-sm  font-Inter uppercase '>
         {ratingpoint}
-      </h2>
+      </h3>
     </>
   )
 }

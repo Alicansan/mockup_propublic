@@ -2,10 +2,11 @@ import CoachProfileCard from '@/components/Coach/CoachProfileCard'
 import React from 'react'
 import { coaches } from '@/lib/constants'
 import CoachDashBoard from '@/components/Coach/CoachDashBoard'
+import CoachReview from '@/components/Coach/CoachReview'
 
 //inline equivalent of interface defining CoachPages( {params}:{params: {id: string}})
 
-export default function Coach({
+function Coach({
   params,
 }: {
   params: { id: string }
@@ -33,6 +34,14 @@ export default function Coach({
           )}
         </div>
       </div>
+      <div className='mt-[7rem] w-full mx-auto max-w-[89rem] h-full bg-[#0C0C0C] '>
+        {coach && (
+          <CoachReview
+            CoachReviews={coach.CoachReviews}
+          />
+        )}
+      </div>
     </main>
   )
 }
+export default Coach
