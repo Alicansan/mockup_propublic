@@ -13,7 +13,7 @@ export default function Home() {
   const z = 5
 
   return (
-    <main className=' md:mt-[7rem] w-full mx-auto max-w-[89rem] h-full'>
+    <main className=' mt-[7rem] w-full mx-auto max-w-[89rem] h-full'>
       {/* Hero Section */}
       <div className='bg-[#2fff00] font-Inter text-black flex justify-center text-sm py-2 font-small'>
         A NEW COURSE HAS BEEN UPDATED! "HOW TO

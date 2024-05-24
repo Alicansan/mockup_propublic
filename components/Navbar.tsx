@@ -13,7 +13,7 @@ const Navbar = () => {
     setisClicked(!isClicked)
   }
   return (
-    <nav className='fixed bg-black z-30 md:backdrop-blur-[3px] md:bg-opacity-0 w-full mx-auto left-0 right-0 top-0 max-w-[89rem] max-h-[6rem] '>
+    <nav className='fixed left-0 right-0 top-0 bg-black z-30 backdrop-blur-[3px] bg-opacity-0 w-full mx-auto  max-w-[89rem] max-h-[6rem] px-24 md:px-0'>
       <div className='  mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16 md:h-24'>
           {/* Left Side */}
