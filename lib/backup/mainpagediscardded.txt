@@ -1,33 +1,6 @@
 
 
-      
-      {/* Hero Section */}
-      {/* Body Section */}
-      <CaroImage />
-      <div className='flex items-center flex-col font-[400] relative '>
-        <img
-          src='/fingradient.svg'
-          width='500px'
-          height='500px'
-          className='absolute left-0 top-0 -mt-[160px]  -z-10 '
-        />
-        <p className=' text-4xl font-normal'>
-          WE AT PROPUBLIC, BELIEVE THAT
-        </p>
-        <p className='text-6xl uppercase max-w-[50rem]  text-center font-semibold mt-12 mb-7'>
-          standing out and shining in play is not
-          just a goal but a journey guided by
-          expert hands.
-        </p>
-        <Link href='/'>
-          <Button
-            variant='green'
-            className=' py-7 rounded-[6px] text-end '
-          >
-            ABOUT US
-          </Button>
-        </Link>
-      </div>
+
       {/* Statistics */}
       <div className='container'>
         <div className='grid grid-cols-3 gap-x-4'>

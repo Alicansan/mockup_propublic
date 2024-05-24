@@ -12,19 +12,19 @@ import Link from 'next/link'
 
 const CaroImage = ({}) => {
   return (
-    <Carousel className='w-full '>
-      <CarouselContent className='pl-20 gap-20 mt-[10px] mb-[120px]'>
+    <Carousel className='w-screen z-20 '>
+      <CarouselContent className='md:pl-20 m-12 gap-20 mt-[10px] mb-[120px]'>
         {[...Caros].map((item, index) => (
           <CarouselItem
             key={index}
-            className='basis-[860px] aspect-[16/9] relative border-gray-500 border-2 rounded-[10px]'
+            className='md:basis-[860px] md:aspect-[16/9] relative border-gray-500 border-2 rounded-[10px]'
           >
             <div className='flex flex-col h-full gap-10 justify-center items-start'>
-              <h2 className='text-[80px] leading-[70px] font-[600] uppercase w-[510px]'>
+              <h2 className='md:text-[80px]  text-3xl leading-[70px] font-[600] uppercase w-[510px] text-start pl-2'>
                 {item.header}
               </h2>
 
-              <p className='max-w-[500px] text-left font-[200] font-Inter '>
+              <p className='max-w-[500px] text-left font-[200] font-Inter  text-sm p-3'>
                 {item.context}
               </p>
               <img
@@ -32,7 +32,7 @@ const CaroImage = ({}) => {
                 alt={item.name}
                 width={1000}
                 height={500}
-                className='absolute object-cover inset-0 w-full h-full z-[-2] rounded-[8px]'
+                className='absolute object-cover inset-0 w-full h-full z-[-2] rounded-[8px] md:w-[62rem]+h-[32rem]'
               />
               <Link href='/'>
                 <Button

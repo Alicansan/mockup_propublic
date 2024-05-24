@@ -220,7 +220,7 @@ const CarouselItem = React.forwardRef<
       className={cn(
         'min-w-0  grow-0 basis-full shrink-0', // discarded
         orientation === 'horizontal'
-          ? 'pl-4'
+          ? 'md:pl-4'
           : 'pt-4',
         className
       )}
