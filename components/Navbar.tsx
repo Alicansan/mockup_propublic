@@ -13,7 +13,7 @@ const Navbar = () => {
     setisClicked(!isClicked)
   }
   return (
-    <nav className='!overflow-hidden fixed left-0 right-0 top-0 bg-black z-30 backdrop-blur-[3px] bg-opacity-0  mx-auto  max-w-[89rem] max-h-[6rem] px-auto md:px-0'>
+    <nav className='!overflow-visible fixed left-0 right-0 top-0 bg-black z-30 backdrop-blur-[3px] bg-opacity-0  mx-auto  max-w-[89rem] max-h-[6rem] px-auto md:px-0'>
       <div className='  mx-auto px-4 sm:px-6 lg:px-8'>
         <div className='flex items-center justify-between h-16 md:h-24'>
           {/* Left Side */}
@@ -112,8 +112,8 @@ const Navbar = () => {
         </div>
       </div>
       {isClicked && (
-        <div className='md:hidden -mt-12 h-24 bg-black  px-0'>
-          <div className='px-2 pt-8 pb-3  sm:px-3  flex flex-col items-center text-3xl bg-black '>
+        <div className='md:hidden pt-12 -mt-16 bg-black  px-0'>
+          <div className='px-2 pt-8   sm:px-3  flex flex-col items-center text-3xl bg-black '>
             <Link href='/' className='block'>
               COURSES
             </Link>
