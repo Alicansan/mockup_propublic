@@ -15,17 +15,17 @@ const CaroReviews = () => {
         height='500px'
         className='absolute left-0  -mt-[160px]  -z-10 '
       />
-      <CarouselContent className=' '>
+      <CarouselContent className=' mb-12 '>
         {[...UserReview].map((item, index) => (
           <CarouselItem
             key={index}
-            className=' min-w-[680px] border-2 border-gray-600 m-12  bg-gray-400/5  rounded-xl h-[465px] shrink'
+            className=' md:min-w-[680px] border-2 border-gray-600 md:m-12   bg-gray-400/5  rounded-xl md:h-[465px] md:shrink w-[12rem] h-[12rem]'
           >
             <div className=' m-12  uppercase '>
-              <p className='text-2xl font-thin font-Inter   '>
+              <p className='md:text-2xl  font-thin font-Inter'>
                 "{item.review}"
               </p>
-              <div className='flex flex-row  mt-[230px] '>
+              <div className='flex flex-row  md:mt-[230px]'>
                 <img
                   src={item.image}
                   width={64}
@@ -33,7 +33,7 @@ const CaroReviews = () => {
                 />
                 <div className='pl-7 pt-3 text-2xl font-medium text-white flex-col flex '>
                   {item.username}
-                  <p className='   inline gap-2 text-white text-sm'>
+                  <p className='   inline  text-white text-sm'>
                     {item.gamename} BY{' '}
                     <span className='text-red-500'>
                       {item.coachname}

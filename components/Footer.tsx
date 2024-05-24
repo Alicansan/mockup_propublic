@@ -10,10 +10,10 @@ import { Button } from './ui/button'
 
 const Footer = () => {
   return (
-    <footer className='w-full mx-auto  top-0 max-w-[89rem]'>
+    <footer className='!overflow-hidden w-full mx-auto  top-0 max-w-[89rem] '>
       <div className='bg-gray-400 w-full h-[1px] mb-11'></div>
-      <div className='p-4 flex  flex-row justify-around items-start '>
-        <div className='items-center flex flex-col'>
+      <div className='p-4 flex flex-col md:flex-row justify-around items-center md:items-start gap-3'>
+        <div className='items-center flex flex-col '>
           <div className=' flex flex-row mb-11 '>
             <img
               src='/propublic.png'
@@ -31,8 +31,8 @@ const Footer = () => {
             camaraderie, and shaping the next
             generation of e-Sports champions.
           </p>
-          <div>
-            <p className='uppercase  w-[300px] text-sm font-extralight font-Inter'>
+          <div className='flex  flex-col py-12 items-center'>
+            <p className='uppercase  w-[300px] text-sm font-extralight font-Inter text-center'>
               we are on social media!
             </p>
             <div className='flex flex-row gap-5 mt-3 '>
@@ -65,7 +65,7 @@ const Footer = () => {
         </div>
         <div className='gap-3 flex flex-col '>
           <p className='uppercase  text-sm font-extralight font-Inter inline'>
-            QUICK LINKS
+            POPULAR GAMES
           </p>
           {popularGames.map((item) => (
             <Link
@@ -84,7 +84,7 @@ const Footer = () => {
         </div>
       </div>
       <div className='w-full border-gray-500  border h-[1px] border-dotted  my-[120px] '>
-        <div className='flex flex-row my-11 justify-around items-start'>
+        <div className='flex md:flex-row flex-col my-11 justify-around md:items-start items-center'>
           <p className='upper'>
             {' '}
             2024 PROPUBLIC. ALL RIGTS RESERVED.

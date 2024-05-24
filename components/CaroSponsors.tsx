@@ -20,21 +20,19 @@ const CaroSponsors = () => {
         height='500px'
         className='absolute m-auto left-0 right-0 -top-48 -z-10'
       />
-      <CarouselContent className='my-11'>
+      <CarouselContent className='my-11 '>
         {[...Sponsors].map((item, index) => (
-          <div className=' b  mx-auto flex flex-col  bg-white/5 justify-center text-center  border-4 rounded-xl border-gray-500   transition duration-300 ease-in-out transform hover:scale-110'>
+          <div className='bg-white/5  mx-7 relative text-center  border-4 rounded-xl border-gray-500   transition duration-300 ease-in-out transform hover:scale-110'>
             <CarouselItem
               key={index}
-              className='mx-auto  pl-0 flex justify-center'
+              className='w-[12rem] h-[12rem]  flex-col items-center  '
             >
               <img
                 src={item.image}
-                className='flex transition duration-300 m-8  ease-in-out transform hover:scale-110 object-contain'
-                height={198}
-                width={198}
+                className=' transition duration-300 m-8  ease-in-out transform hover:scale-110 w-[7rem] h-[7rem] '
               />
             </CarouselItem>
-            <div className='text-5xl'>
+            <div className='text-3xl '>
               {item.name}
             </div>
           </div>

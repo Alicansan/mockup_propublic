@@ -20,17 +20,17 @@ const CaroCoaches = () => {
             <div className=' relative mb-12  '>
               <CarouselItem
                 key={index}
-                className=' ml-2 '
+                className=' ml-2 w-[20rem] h-[20rem] md:w-[28rem] md:h-[28rem]'
               >
                 <img
                   src={item.background}
-                  className='object-contain'
+                  className='object-contain '
                 />
                 <img
                   src={item.image}
-                  className=' z-20 absolute bottom-1 right-0 max-h-full'
+                  className=' z-20 absolute bottom-[18px] right-0 max-h-full'
                 />
-                <div className='absolute z-30 bottom-0 left-10 flex '>
+                <div className='absolute z-30 bottom-[18px] left-10 flex '>
                   <p className='mr-2'>
                     {item.author}
                   </p>

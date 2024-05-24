@@ -12,8 +12,8 @@ import Link from 'next/link'
 
 const CaroImage = ({}) => {
   return (
-    <Carousel className='w-screen z-20 '>
-      <CarouselContent className='md:pl-20 m-12 gap-20 mt-[10px] mb-[120px]'>
+    <Carousel className='w-screen z-20 -mt-[120px]'>
+      <CarouselContent className='md:pl-20 m-12 gap-20 mt-[10px] '>
         {[...Caros].map((item, index) => (
           <CarouselItem
             key={index}
