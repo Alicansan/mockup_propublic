@@ -17,8 +17,8 @@ function Coach({
     (coach) => coach.profileCard.id === id
   )
   return (
-    <main className='mt-[7rem] w-full mx-auto max-w-[89rem] h-full'>
-      <div className='grid  grid-cols-1 xl:grid-cols-3 mx-12 '>
+    <main className='overflow-hidden mt-[7rem] w-full mx-auto max-w-[89rem] h-full'>
+      <div className='grid  grid-cols-1 xl:grid-cols-3 md:mx-12 '>
         <div className='col-span-1 '>
           {coach && (
             <CoachProfileCard
