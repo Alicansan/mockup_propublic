@@ -21,7 +21,7 @@ const CoachProfileCard = ({
   bio,
 }: CoachProfileProp) => {
   return (
-    <div className='mb-12 mt-30 flex flex-col'>
+    <div className='mb-12 mt-30 flex flex-col items-center'>
       <div className=' px-6 border-2 border-gray-600 rounded-[10px] w-[24rem] h-[42rem] bg-opacity-5 bg-gray-50 flex flex-col items-center'>
         <img
           src={image}

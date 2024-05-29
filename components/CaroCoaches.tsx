@@ -14,7 +14,7 @@ import Rating from './Rating'
 const CaroCoaches = () => {
   return (
     <Carousel>
-      <CarouselContent>
+      <CarouselContent className=''>
         {[...CaroCoachs].map((item, index) => (
           <Link href={`coaches/${item.id}`}>
             <div className=' relative mb-12  '>

@@ -245,7 +245,7 @@ export default function Home() {
       </Link>
       {/* Games Section */}
       {/* Stripes */}
-      <div className='md:flex hidden flex-col  justify-start md:-mt-[20rem] mb-[190px] w-auto z-10'>
+      <div className='md:flex hidden flex-col  justify-start  mb-[190px] w-auto z-10'>
         <div className='bg-white relative z-20 text-black flex justify-center text-2xl py-5 font-bold md:text-nowrap'>
           {[...Array(n)].map((e, i) => (
             <div className=' text-nowrap mx-7'>
@@ -283,7 +283,7 @@ export default function Home() {
       {/* Stripes */}
 
       {/* Fishing Content */}
-      <div className='flex flex-row justify-start m-[100px] '>
+      <div className='flex flex-row justify-center m-[100px] '>
         <p className='uppercase text-4xl md:text-7xl font-[500]  flex-col md:text-start text-center'>
           INTERESTED?<br></br>
           HERE'S HOW{' '}
