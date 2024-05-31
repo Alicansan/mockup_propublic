@@ -265,7 +265,7 @@ export default function Home() {
         </div>
       </div>
       {/* Small Stripes */}
-      <div className='flex md:hidden flex-col  justify-start md:-mt-[20rem] mb-[190px] w-auto z-10 '>
+      <div className='flex md:hidden flex-col  justify-start md:-mt-[20rem] mb-[190px] w-auto z-10 b-0'>
         <div className='bg-white relative z-20 text-black flex justify-center text-2xl py-3 font-bold '>
           <div className=' text-nowrap mx-7'>
             SCROLL TO EXPLORE
