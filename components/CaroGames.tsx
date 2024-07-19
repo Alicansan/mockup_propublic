@@ -16,10 +16,10 @@ const CaroGames = () => {
     <Carousel>
       <CarouselContent>
         {[...CaroGame].map((item, index) => (
-          <div className='  my-7  mx-4 border-4 rounded-xl border-gray-800 md:overflow-clip transition duration-300 ease-in-out transform hover:scale-110'>
+          <div className='  my-7  mx-4 border-4 rounded-xl  border-gray-800 md:overflow-clip transition duration-300 ease-in-out transform hover:scale-110'>
             <CarouselItem
               key={index}
-              className='  w-[12rem]  md:w-[24rem] md:h-[20rem] p-3 relative   flex '
+              className='  w-[12rem]  md:w-auto md:h-[20rem] p-3 relative    flex '
             >
               <img
                 src={item.image}

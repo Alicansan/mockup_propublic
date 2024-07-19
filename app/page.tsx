@@ -14,9 +14,9 @@ export default function Home() {
 
   return (
     <main className='overflow-hidden mt-[7rem] md:w-full md:mx-auto md:max-w-[89rem] md:h-full   '>
-      <div className='bg-[#2fff00] font-Inter text-black  text-sm  font-small '>
-        A NEW COURSE HAS BEEN UPDATED! "HOW TO
-        MAINTAIN TEAMMATE COMMUNICATING SKILLS"{' '}
+      <div className='bg-[#2fff00] font-Inter text-black  text-sm  font-small text-center'>
+        A NEW COURSE HAS BEEN UPDATED! "HOW TO MAINTAIN
+        TEAMMATE COMMUNICATING SKILLS"{' '}
         <Link href='/'>
           <span className='font-semibold ml-3'>
             VIEW COURSE
@@ -44,10 +44,9 @@ export default function Home() {
           </span>
           <div className='flex justify-center'>
             <p className='md:text-xl max-w-3xl uppercase  font-Inter font-light mt-12 text-sm px-16 '>
-              we stand as the only platform that
-              provides professional coaching
-              services tailored specifically for
-              your favorite mobile games.
+              we stand as the only platform that provides
+              professional coaching services tailored
+              specifically for your favorite mobile games.
             </p>
           </div>
           {/* Background Images */}
@@ -116,9 +115,8 @@ export default function Home() {
             WE AT PROPUBLIC, BELIEVE THAT
           </p>
           <p className='md:text-6xl text-3xl uppercase  text-center font-semibold mt-12 mb-7'>
-            standing out and shining in play is
-            not just a goal but a journey guided
-            by expert hands.
+            standing out and shining in play is not just a
+            goal but a journey guided by expert hands.
           </p>
           <Link href='/'>
             <Button
@@ -168,8 +166,8 @@ export default function Home() {
               </span>
             </p>
             <p className='uppercase -mt-10 container text-sm font-thin max-w-[350px] font-Inter'>
-              certified coaches with industry
-              achievements & experiences
+              certified coaches with industry achievements &
+              experiences
             </p>
           </div>
         </div>
@@ -210,10 +208,7 @@ export default function Home() {
             />
           </span>
         </p>
-        <Link
-          href='/'
-          className='md:pt-0 pt-12  md:mb-0'
-        >
+        <Link href='/' className='md:pt-0 pt-12  md:mb-0'>
           <Button variant='green' className='  '>
             BECOME A COACH!
           </Button>
@@ -297,10 +292,7 @@ export default function Home() {
         </p>
       </div>
       <div className='hidden relative max-w-auto - md:flex flex-row mx-[200px]'>
-        <img
-          src='/stripes.svg'
-          className=' my-5'
-        />
+        <img src='/stripes.svg' className=' my-5' />
         <img
           src='/circledot.svg'
           className='absolute top-1.5 -left-0 '
@@ -338,8 +330,8 @@ export default function Home() {
               REQUEST BEING PROCESSED
             </h1>
             <p className='uppercase  container  text-sm font-thin max-w-[250px] font-Inter'>
-              OUR COACH WILL GET BACK TO YOU
-              WITHIN 24 HOURS.
+              OUR COACH WILL GET BACK TO YOU WITHIN 24
+              HOURS.
             </p>
           </div>
           <div className='text-center '>
@@ -350,8 +342,8 @@ export default function Home() {
               Start scheduling lesson
             </h1>
             <p className='uppercase  container  text-sm font-thin max-w-[250px] font-Inter'>
-              START PLANNING OUT LESSON'S SCHEDULE
-              WITH YOUR COACH.
+              START PLANNING OUT LESSON'S SCHEDULE WITH YOUR
+              COACH.
             </p>
           </div>
         </div>
@@ -361,14 +353,10 @@ export default function Home() {
       <div className='bg-red-600 flex md:flex-row flex-col justify-evenly  w-4/6 mx-auto my-11 rounded-xl py-3'>
         <div className='md:w-1/3 whitespace-pre-wrap flex flex-col justify-center md:py-12 text-center pb-12 md:pb-0'>
           <p className='font-bold md:text-5xl '>
-            BE A MEMBER & GET ACCESS ON ALL
-            COURSES!
+            BE A MEMBER & GET ACCESS ON ALL COURSES!
           </p>
           <p className='font-bold md:text-5xl'>
-            $10 /{' '}
-            <span className='md:text-3xl'>
-              Month
-            </span>
+            $10 / <span className='md:text-3xl'>Month</span>
           </p>{' '}
         </div>
         <div className='bg-white text-black  rounded-xl p-12'>
@@ -377,26 +365,22 @@ export default function Home() {
           </h2>
           <ul className='list-disc mb-11'>
             <li>
-              FULL ACCESS TO ALL ONLINE COURSES,
-              GUIDES AND VIDEOS,
+              FULL ACCESS TO ALL ONLINE COURSES, GUIDES AND
+              VIDEOS,
             </li>
             <li>
               GET THE LATEST GAMING UPDATES ON NEW
               TECHNIQUES,
             </li>
             <li>
-              GET REWARDS OF FREE COURSES EVERY
-              NEW SEASON,
+              GET REWARDS OF FREE COURSES EVERY NEW SEASON,
             </li>
             <li>DIRECTLY SUPPORT THE CREATORS</li>
             <li>ACCESS TO 20+ GAMES</li>
           </ul>
 
           <Link href='/'>
-            <Button
-              variant='green'
-              className='md:px-12   '
-            >
+            <Button variant='green' className='md:px-12   '>
               BECOME A MEMBER!
             </Button>
           </Link>
@@ -417,9 +401,8 @@ export default function Home() {
         </p>
       </div>
       <p className='uppercase flex justify-center font-extralight md:text-3xl text-center px-2'>
-        we partner with the region’s expertise to
-        provide the best coaching lessons and
-        coach vidEos.
+        we partner with the region’s expertise to provide
+        the best coaching lessons and coach vidEos.
       </p>
       <CaroSponsors />
       {/* Sponsors */}
